@@ -88,7 +88,8 @@ header h1 span {
 }
 
 .gif-container img {
-    max-width: 25%;
+    width: 25%;
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
 }
@@ -103,14 +104,34 @@ footer {
 
 /* Media Queries para responsividade */
 @media (max-width: 768px) {
+    .carousel {
+        max-width: 80%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .carousel-inner img {
         width: 75%; /* Ajusta o tamanho das imagens em telas menores */
+    }
+
+    .gif-container img {
+        width: 50%;
     }
 }
 
 @media (max-width: 480px) {
+    .carousel {
+        max-width: 90%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
     .carousel-inner img {
         width: 90%; /* Ajusta o tamanho das imagens em dispositivos móveis */
+    }
+
+    .gif-container img {
+        width: 75%;
     }
 
     .prev, .next {
@@ -122,4 +143,3 @@ footer {
         font-size: 16px;
     }
 }
-
