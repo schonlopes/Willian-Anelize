@@ -32,12 +32,12 @@
         </section>
 
         <section class="gif-container">
-            <img src="gif.gif" alt="GIF de amor">
+            <img src="https://media.giphy.com/media/26u4cqiYI30juCOGY/giphy.gif" alt="GIF de amor">
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Willian & Anelize - 11 de Janeiro de 2025</p>
+        <p>&copy; 2024 Willian & Anelize - 11 de janeiro de 2025</p>
     </footer>
 
     <audio id="background-music" loop>
@@ -46,12 +46,12 @@
     </audio>
 
     <script>
-        // Reproduzir música no carregamento
+        // Reproduzir música após interação do usuário
         window.addEventListener('load', function() {
             var audio = document.getElementById('background-music');
-            audio.play().catch(function() {
-                console.log("O navegador bloqueou a reprodução automática. A música será iniciada manualmente.");
-            });
+            document.body.addEventListener('click', function() {
+                audio.play();
+            }, { once: true });
         });
     </script>
 
