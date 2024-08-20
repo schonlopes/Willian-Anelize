@@ -18,7 +18,7 @@ header h1 span {
 
 .carousel {
     position: relative;
-    max-width: 80%;
+    max-width: 60%;
     margin: 50px auto;
     overflow: hidden;
     border: 5px solid #d4af37; /* Borda dourada */
@@ -26,9 +26,10 @@ header h1 span {
 }
 
 .carousel-inner img {
-    width: 25%; /* Reduz as imagens para 25% do tamanho original */
+    width: 50%; /* Reduz as imagens para 50% do tamanho original */
     display: none;
     margin: 0 auto;
+    border-radius: 10px;
 }
 
 .carousel-inner img:first-child {
@@ -81,6 +82,17 @@ header h1 span {
     margin: 20px auto;
 }
 
+.gif-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.gif-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
 footer {
     background-color: #2b2b2b;
     padding: 10px;
@@ -92,13 +104,13 @@ footer {
 /* Media Queries para responsividade */
 @media (max-width: 768px) {
     .carousel-inner img {
-        width: 50%; /* Ajusta o tamanho das imagens em telas menores */
+        width: 75%; /* Ajusta o tamanho das imagens em telas menores */
     }
 }
 
 @media (max-width: 480px) {
     .carousel-inner img {
-        width: 80%; /* Ajusta o tamanho das imagens em dispositivos móveis */
+        width: 90%; /* Ajusta o tamanho das imagens em dispositivos móveis */
     }
 
     .prev, .next {
